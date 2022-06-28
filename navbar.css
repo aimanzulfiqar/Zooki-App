@@ -1,87 +1,99 @@
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0.75rem;
+    font-size: 12px;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    color: hsla(0, 0%, 100%, 0.6);
+    z-index: 20;
+}
 
-  padding: 0px 0.75rem;
-  font-size: 12px;
-  background-color: transparent;
-  width: 100%;
-  /* background-color: black; */
-  position: sticky;
-  /* position: fixed; */
-  color: hsla(0, 0%, 100%, 0.6);
-  /* transition: all 0.5s ease-in-out; */
-}
 nav img {
-  height: 20px;
+    height: 20px;
 }
+
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 .nav-links {
-  text-align: center;
+    text-align: center;
 }
 
 .nav-links ul li {
-  display: inline-block;
+    display: inline-block;
+    padding: 8px 12px;
+}
 
-  padding: 8px 12px;
-}
 a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
 }
+
 .nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #fff;
-  display: block;
-  transition: 0.5s;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    transition: 0.5s;
 }
+
 .nav-links ul li:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .tgl-button {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
+
 .tgl .bar {
-  height: 3px;
-  width: 100%;
-  background-color: black;
+    height: 3px;
+    width: 100%;
+    background-color: black;
 }
 
 @media (max-width: 1200px) {
-  nav {
-    padding: 0px;
-  }
+    nav {
+        padding: 20px 0px;
+    }
 }
-@media (max-width: 992px) {
-  nav ul {
-    display: none;
-  }
-  nav {
-    justify-content: space-between;
 
-    padding: 5%;
-  }
-  .tgl-button {
-    display: inline-block;
-  }
-  .tgl-button:active .nav {
-    display: block;
-    background-color: red;
-    flex-direction: column;
-    color: #f8f9fa;
-  }
-  nav ul .tgl-button:hover > ul {
-    display: block;
-  }
+@media (max-width: 992px) {
+    nav ul {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+    .tgl-button {
+        display: inline-block;
+    }
+    .tgl-button:active .nav {
+        display: block;
+        background-color: red;
+        flex-direction: column;
+        color: #f8f9fa;
+    }
+    nav ul .tgl-button:hover>ul {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding: 5%;
+    }
 }

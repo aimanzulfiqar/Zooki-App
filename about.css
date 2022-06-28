@@ -1,0 +1,120 @@
+.about {
+    height: calc(100vh - 150px);
+    background: url("./images/about-bg.png");
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Rubik";
+}
+
+.about-container {
+    width: 100%;
+}
+
+.title {
+    padding: 80px 0px;
+    margin-left: 16%;
+    letter-spacing: 0.1rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10%;
+}
+
+.op {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.op h3 {
+    padding: 20px 0;
+}
+
+.op p {
+    padding: 2% 10%;
+    text-align: center;
+    font-family: 14px;
+    color: #6c757d;
+    line-height: 2rem;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    padding-left: 15%;
+    margin-bottom: 5%;
+    gap: 4%;
+}
+
+.detail img {
+    width: 70%;
+    border: 6px solid rgba(0, 91, 234, 0.2);
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.detail h3 {
+    line-height: 1.5;
+    font-size: 1.75rem;
+    padding-bottom: 2%;
+    font-weight: lighter;
+    color: rgb(33, 37, 41);
+}
+
+.detail p {
+    width: 35vw;
+    color: #6c757d;
+    line-height: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .about {
+        height: 100%;
+    }
+    .options {
+        flex-direction: column;
+        margin: 0%;
+    }
+    .options p {
+        margin-top: 0%;
+    }
+    .title {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .detail {
+        flex-direction: column;
+        padding: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .detail p {
+        width: 100%;
+        padding: 3% 10%;
+    }
+    .detail img {
+        justify-content: center;
+        width: 80%;
+        margin: 10%;
+    }
+    .detail h3 {
+        padding: 2% 10%;
+        width: 80vw;
+    }
+}

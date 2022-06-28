@@ -1,57 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="body.css" />
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./home.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&family=Poppins:wght@100;700&family=Rubik:ital@0;1&display=swap");
-    </style>
-    <script
-      src="https://kit.fontawesome.com/9376b055d5.js"
-      crossorigin="anonymous"
-    ></script>
-    <script></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <img src="./images/logo.png" alt="logo" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./services.css" />
+    <link rel="stylesheet" href="./features.css" />
 
-        <div class="nav-links">
-          <ul class="dropdown-content">
-            <li><a href="/main.html">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/features">Features</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/clients">Clients</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">contact us</a></li>
-          </ul>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&family=Poppins:wght@100;700&family=Rubik:ital@0;1&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9376b055d5.js" crossorigin="anonymous"></script>
+    <script></script>
+    <title>Zooki</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="nav">
+            <nav>
+                <img src="./images/logo.png" alt="logo" />
+                <div class="nav-links">
+                    <ul class="dropdown-content" id="navlinks">
+                        <li><a href="/main.html">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/features">Features</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/clients">Clients</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="tgl-button">
+                    <a class="fas fa-bars" onclick="showmenu()"> </a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="home">
+            <div class="body-container">
+                <div class="text-container">
+                    <h1>Make your Marketing real.</h1>
+                    <p>
+                        Ut enim ad minima veniam quis nostrum exercitationem ullam corporis at suscipit laboriosam nisi ut aliquid a commodi consequatur Quis autem.
+                    </p>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="img">
+                    <img src="./images/home.png" />
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="about">
+            <div class="about-container">
+                <div class="title">
+                    <h3>ABOUT US</h3>
+                </div>
+                <div class="options">
+                    <div class="op" id="op1">
+                        <i class="material-icons">lightbulb</i>
+                        <h3>Crative Design</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur at aut odit aut fugit sed quia consequuntur magni.</p>
+                    </div>
+                    <div class="op">
+                        <i class="material-icons">computer</i>
+
+
+                        <h3>Dynamic Growth</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur at aut odit aut fugit sed quia consequuntur magni.</p>
+                    </div>
+                    <div class="op">
+                        <i class="material-icons">laptop</i>
+                        <h3>Strategy Solutions</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur at aut odit aut fugit sed quia consequuntur magni.</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="text">
+                        <h3>Performancect Solution For Small Businesses</h3>
+                        <p>Temporibus autem quibusdam a aut officiis debitis rerum necessitatibus saepeeveniet ut et voluptates repudiandae sint a molestiae recusandae itaque earum rerum hic tenetur a sapiente delectus ut at aut reiciendis voluptatibus maiores
+                            alias consequatur perferendis doloribus asperiores rerum necessitat saepeeveniet.</p>
+
+                        <p style="color:black ;"><i class="fas fa-circle" style="font-size: 8px ; color:orange"></i> Lean More About Us
+                        </p>
+
+
+
+                    </div>
+                    <div class="detail-img">
+                        <img src="./images//detailimg.jpg" />
+                    </div>
+
+                </div>
+        </section>
+        <section class="service-container">
+            <p class="title">OUR SERVICES</p>
+            <div class="services">
+                <div id="ser1" class="service-box">
+                    <i class="fa fa-database"></i>
+                    <h3 class="heading">Awesome Support</h3>
+                    <p>Sed ut perspiciatis unde sit omnise iste natus voluptatem site accusantium doloremque laudantium combined with a handful totam.</p>
+                    <p class="learn">LEARN MORE <i class="fa fa-arrow-right"></i></p>
+                </div>
+                <div id="ser2" class="service-box">
+                    <i class="fa fa-palette"></i>
+                    <h3 class="heading">Unlimited Colors</h3>
+                    <p>Sed ut perspiciatis unde sit omnise iste natus voluptatem site accusantium doloremque laudantium combined with a handful totam.</p>
+                    <p class="learn">LEARN MORE <i class="fa fa-arrow-right"></i></p>
+                </div>
+                <div id="ser3" class="service-box">
+
+                    <i class="fas fa-chart-line"></i>
+                    <h3 class="heading">Strategy Solutions</h3>
+                    <p>Sed ut perspiciatis unde sit omnise iste natus voluptatem site accusantium doloremque laudantium combined with a handful totam.</p>
+                    <p class="learn">LEARN MORE <i class="fa fa-arrow-right"></i></p>
+                </div>
+                <div id="ser1" class="service-box">
+                    <i class="fas fa-yin-yang"></i>
+                    <h3 class="heading">Digital Design</h3>
+                    <p>Sed ut perspiciatis unde sit omnise iste natus voluptatem site accusantium doloremque laudantium combined with a handful totam.</p>
+                    <p class="learn">LEARN MORE <i class="fa fa-arrow-right"></i></p>
+                </div>
+                <div id="ser2" class="service-box">
+                    <i class="fas fa-keyboard-o"></i>
+                    <h3 class="heading">Easy to customize</h3>
+                    <p>Sed ut perspiciatis unde sit omnise iste natus voluptatem site accusantium doloremque laudantium combined with a handful totam.</p>
+                    <h class="learn">LEARN MORE <i class="fa fa-arrow-right"></i></p>
+                </div>
+                <div id="ser3" class="service-box">
+
+                    <i class="fas fa-dot-circle-o"></i>
+                    <h3 class="heading">Truly Multipurpose</h3>
+                    <p>Sed ut perspiciatis unde sit omnise iste natus voluptatem site accusantium doloremque laudantium combined with a handful totam.</p>
+                    <p class="learn">LEARN MORE <i class="fa fa-arrow-right"></i></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h3>OUR FEATURES</h3>
+            <div class="detail">
+                <div class="text">
+                    <h3>Marketing Performance</h3>
+                    <p>Itaque earum rerum hic tenetur sapiente delectut reiciendis voluptatibus perspiciatis unde omnis iste natus error sit maiores alias consequatur perferendisthat doloribus asperiores repellat. Nam libero tempore cum soluta nobis eligendi
+                        optio cumque nihil impedit minusidquod maxime placeat facere possimus.</p>
+                    <p>LEARN MORE<i class="fas fa-arrow-right"></i>
+                    </p>
+
+
+
+                </div>
+                <div class="detail-img">
+                    <img src="./images//detailimg.jpg" />
+                </div>
+            </div>
+
+        </section>
         </div>
-        <div class="tgl-button">
-          <a class="fas fa-bars"> </a>
-        </div>
-      </nav>
-      <div class="home">
-        <div class="text-container">
-          <h1>Make your Marketing real.</h1>
-          <p>
-            Ut enim ad minima veniam quis nostrum exercitationem ullam corporis
-            at suscipit laboriosam nisi ut aliquid a commodi consequatur Quis
-            autem.
-          </p>
-          <button class="btn">Learn More</button>
-        </div>
-        <div class="img">
-          <img src="./images/home.png" />
-        </div>
-      </div>
+
     </div>
-  </body>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.display = "flex";
+            navlinks.style.flexDirection = "column";
+            navlinks.style.position = "absolute";
+            navlinks.style.alignContent = "left"
+            navlinks.style.justifyContent = "left"
+            navlinks.style.color = "red";
+        }
+    </script>
+    </script>
+</body>
+
 </html>

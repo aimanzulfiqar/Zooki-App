@@ -7,24 +7,34 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <img src="./images/logo.png" alt="logo" />
+    <section class="nav">
+      <nav>
+        <img src="./images/logo.png" alt="logo" />
 
-      <div class="nav-links">
-        <ul class="dropdown-content">
-          <li><a href="/main.html">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/features">Features</a></li>
-          <li><a href="/pricing">Pricing</a></li>
-          <li><a href="/clients">Clients</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contact">contact us</a></li>
-        </ul>
-      </div>
-      <div class="tgl-button">
-        <a class="fas fa-bars"> </a>
-      </div>
-    </nav>
+        <div class="nav-links">
+          <ul class="dropdown-content" id="navlinks">
+            <li><a href="/main.html">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/features">Features</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/clients">Clients</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">contact us</a></li>
+          </ul>
+        </div>
+        <div class="tgl-button">
+          <a class="fas fa-bars" onclick="showmenu()"> </a>
+        </div>
+      </nav>
+    </section>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.display = "inline";
+        navlinks.style.color = "red";
+      }
+    </script>
   </body>
 </html>
