@@ -7,10 +7,10 @@
 .feature {
     display: flex;
     flex-direction: row;
-    padding: 0% 20%;
+    padding: 5% 20%;
     justify-content: flex-start;
     align-items: center;
-    gap: 15%;
+    gap: 10%;
 }
 
 .features h3 {
@@ -36,23 +36,11 @@
 }
 
 .featuresimg {
-    background-image: url("./images//featuresbg.png");
-    background-position: 100%;
-    background-size: contain;
+    background-image: url("./images//features-bg.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
     position: relative;
-}
-
-.featuresimg::after {
-    background-color: #005bea;
-    border-radius: 50%;
-    content: "";
-    right: 18%;
-    top: 18%;
-    height: 65%;
-    position: absolute;
-    width: 65%;
-    transition: all 0.5s ease;
-    transition-delay: 0s;
 }
 
 .featuresimg img {
