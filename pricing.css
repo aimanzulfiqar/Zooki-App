@@ -15,6 +15,10 @@
     height: 80vh;
 }
 
+.price .line {
+    margin-left: 14%;
+}
+
 .price h3 {
     margin: 5% 0% 0% 15%;
     letter-spacing: 0.2;
@@ -87,6 +91,12 @@
     margin-left: 45%;
     border-left: 63px solid #0e6cff;
     border-bottom: 100px solid transparent;
+}
+
+@media (max-width: 1050px) {
+    .box {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 1000px) {

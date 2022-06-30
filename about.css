@@ -21,6 +21,11 @@
     letter-spacing: 0.1rem;
 }
 
+.title .line {
+    margin-left: -1%;
+    padding-left: 0%;
+}
+
 .options {
     display: flex;
     flex-direction: row;
