@@ -1,0 +1,117 @@
+.clients {
+    height: 70vh;
+    z-index: 20;
+    color: white;
+    opacity: 1;
+}
+
+.clients::before {
+    content: "";
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: url("./images/bgclients.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.person .post {
+    font-size: 12px;
+    margin-left: 40%;
+}
+
+.person img {
+    border-radius: 50%;
+    height: 20%;
+}
+
+.position {
+    margin-left: 60%;
+}
+
+.position img {
+    height: 30%;
+    width: 30%;
+}
+
+.bg {
+    background-color: #000;
+    height: 100%;
+    opacity: 0.8;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg h3 {
+    padding: 5%;
+}
+
+.slider {
+    display: flex;
+    margin: 0% 15%;
+}
+
+.clientsbox {
+    opacity: 1;
+    position: relative;
+    margin-right: 1%;
+}
+
+.clientsbox::before {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+}
+
+.clientsinfo {
+    padding: 1%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.row h2 {
+    margin-top: 3%;
+}
+
+.clientsinfo p {
+    line-height: 2rem;
+    width: 100%;
+    padding: 5%;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    gap: 2%;
+    margin-top: -5%;
+}
+
+.btns button {
+    width: 1%;
+}
+
+#bl2 {
+    display: none;
+}
