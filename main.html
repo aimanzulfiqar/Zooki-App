@@ -34,19 +34,19 @@
 
 <body>
     <div class="container">
-        <section class="nav">
+        <section class="nav" id="nav">
             <nav class="navbarclr" id="nav">
                 <img src="./images/logo.png" alt="logo" />
                 <div class="nav-links">
                     <ul class="dropdown-content" id="navlinks">
-                        <li><a href="/main.html">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/features">Features</a></li>
-                        <li><a href="/pricing">Pricing</a></li>
-                        <li><a href="/clients">Clients</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact">contact us</a></li>
+                        <li class="links active"><a href="#home">Home</a></li>
+                        <li class="links"><a href="#about">About</a></li>
+                        <li class="links"><a href="#services">Services</a></li>
+                        <li class="links"><a href="#features">Features</a></li>
+                        <li class="links"><a href="#pricing">Pricing</a></li>
+                        <li class="links"><a href="#clients">Clients</a></li>
+                        <li class="links"><a href="#blog">Blog</a></li>
+                        <li class="links"><a href="#contact">contact us</a></li>
                     </ul>
                 </div>
                 <div class="tgl-button">
@@ -55,7 +55,7 @@
             </nav>
         </section>
 
-        <section class="home">
+        <section class="home" id="home">
             <div class="body-container">
                 <div class="text-container">
                     <h1>Make your Marketing real.</h1>
@@ -72,7 +72,7 @@
         </section>
 
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-container">
                 <div class="title">
                     <h3>ABOUT US</h3>
@@ -111,7 +111,7 @@
         </section>
 
 
-        <section class="service-container">
+        <section class="service-container" id="services">
             <p class="title">OUR SERVICES</p>
             <img src="./images/lineblue.png" class="line" />
             <div class="services">
@@ -156,7 +156,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="features">
             <h3>OUR FEATURES</h3>
             <img src="./images/lineblue.png" class="line" />
             <div class="feature">
@@ -172,9 +172,9 @@
                     <img src="./images/features.png" />
                 </div>
             </div>
-        </section>
-        <section class="Strategy">
-            <div class="feature">
+
+
+            <div class="feature" style="background-color:white ;">
                 <div class="featuresimg">
                     <img src="./images/strategy.png" />
                 </div>
@@ -188,9 +188,9 @@
                     </p>
                 </div>
             </div>
-        </section>
 
-        <section class="features">
+
+
             <div class="feature">
                 <div class="text">
                     <i class="	fas fa-desktop" style="color:#0e6cff ; font-size: 30px; padding: 5% 0%;"></i>
@@ -206,7 +206,8 @@
             </div>
         </section>
 
-        <section class="price">
+
+        <section class="price" id="price">
             <h3>OUR PRICING</h3>
             <img src="./images/lineblue.png" class="line" />
             <div class="pricing">
@@ -282,7 +283,7 @@
             </div>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients" id="clients">
             <div class="bg">
                 <h3>OUR CLIENTS</h3>
                 <img src="./images/line.png" class="line" />
@@ -417,8 +418,8 @@
         </section>
 
 
-        <section class="blog-container">
-            <h3>OUR CLIENTS</h3>
+        <section class="blog-container" id="blog">
+            <h3>THE BLOG</h3>
             <img src="./images/lineblue.png" class="line" />
             <div class="blogsbox">
                 <div class="blog">
@@ -467,8 +468,8 @@
         </section>
 
 
-        <section class="contact">
-            <h3>OUR CLIENTS</h3>
+        <section class="contact" id="contact">
+            <h3>GET IN TOUCH</h3>
             <img src="./images/lineblue.png" class="line" />
             <div class="form">
                 <div class="fields">
@@ -591,17 +592,29 @@
         function changebg() {
             var navbar = document.getElementById("nav");
             var scrollValue = window.pageYOffset;
-            console.log(scrollValue);
             if (scrollValue > 100) {
                 navbar.classList.add('navbarclr')
-                console(scrollValue)
             } else {
                 navbar.classList.remove('navbarclr')
             }
 
 
         }
-        window.addEventListener("scroll", changebg)
+        window.addEventListener("scroll", changebg);
+
+
+        const li = document.querySelectorAll(".links");
+        const sect = document.querySelectorAll("section");
+
+        function activemenu() {
+            let len = sect.length;
+
+            while (--len && window.scrollY < sect[len].offsetTop + 750) {}
+            li.forEach(ltx => ltx.classList.remove("active"));
+            li[len].classList.add("active");
+        }
+
+        window.addEventListener("scroll", activemenu);
     </script>
     </script>
 </body>
