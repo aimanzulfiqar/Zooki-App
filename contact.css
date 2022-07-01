@@ -1,6 +1,9 @@
 .contact {
-    margin: 0;
-    padding: 0;
+    background-color: #eff3f7;
+    height: 100%;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 5%;
 }
 
 .contact h3 {
@@ -13,17 +16,17 @@
 
 .form {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: white;
     border: 1px solid #f3f3f3;
     box-shadow: 3px 3px 10px #f3f3f3;
-    margin: 0% 15% 5%;
+    margin: 0% 15%;
+    padding: 3% 0%;
 }
 
 .fields {
-    width: 100%;
-    padding: 5%;
+    width: 60%;
 }
 
 .row1 {
@@ -42,14 +45,106 @@ textarea {
 }
 
 textarea {
+    margin-top: 2%;
     padding: 5%;
 }
 
 .btnorng {
-    background-color: orange;
+    background-color: #ff8700;
     padding: 2% 5%;
     border: none;
     border-radius: 5px;
     margin-top: 2%;
     color: white;
+    transition: 1s;
+}
+
+.contactinfo {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 2rem;
+    margin-top: 1%;
+}
+
+.clm {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-left: 5%;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+}
+
+.call i {
+    border: 1px solid #6c757d;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.socialmedia {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.info {
+    margin-top: -5%;
+}
+
+.icons {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0% 10%;
+    color: #6c757d;
+    margin-top: 5%;
+}
+
+.btnorng:hover {
+    box-shadow: 3px 3px 5px #6c757d;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+@media (max-width: 1250px) {
+    .call i {
+        padding: 1%;
+    }
+    .contactinfo {
+        font-size: 12px;
+        line-height: 1.2rem;
+    }
+    .form {
+        margin: 5%;
+    }
+}
+
+@media (max-width: 765px) {
+    .row1 {
+        flex-direction: column;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .contactinfo {
+        margin-left: -25%;
+        padding-left: 0;
+        line-height: 1.5rem;
+    }
+    .form {
+        padding: 2%;
+    }
+    .fields {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .contactinfo {
+        margin-left: 5%;
+    }
 }

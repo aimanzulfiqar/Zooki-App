@@ -1,0 +1,67 @@
+.aboutus {
+    background: url("./images/bubblesbg.png");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    color: #6c757d;
+    line-height: 2rem;
+}
+
+.aboutinfo {
+    width: 20%;
+}
+
+.aboutus p {
+    font-size: 14px;
+}
+
+.aboutus h3 {
+    color: black;
+}
+
+.aboutus p:hover {
+    color: #ff8700;
+}
+
+.ofc {
+    font-size: 14px;
+}
+
+.aboutus p::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ff8700;
+    display: block;
+    transition: 1s;
+}
+
+.aboutus p:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+    .aboutus {
+        flex-direction: column;
+        padding: 5%;
+    }
+    .aboutinfo {
+        width: 100%;
+        padding-top: 5%;
+        margin-bottom: 5%;
+    }
+    .ofc {
+        width: 100%;
+    }
+    .aboutus h3 {
+        margin: 3% 0%;
+    }
+    .aboutus p:hover::after {
+        width: 100%;
+    }
+}

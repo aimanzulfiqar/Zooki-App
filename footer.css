@@ -1,0 +1,10 @@
+.footer {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5% 0%;
+    color: white;
+    font-size: 14px;
+    font-family: "Rubik";
+}

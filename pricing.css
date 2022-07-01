@@ -29,6 +29,7 @@
     background: white;
     width: 100%;
     border: 1px solid #f3f3f3;
+    transition: 1s;
 }
 
 .shadow {
@@ -41,6 +42,7 @@
     background: #f3f3f3;
     position: relative;
     border: 1px solid #f3f3f3;
+    z-index: 1;
 }
 
 .box-text {
@@ -55,6 +57,7 @@
     margin-left: 45%;
     border-left: 63px solid #f3f3f3;
     border-bottom: 100px solid transparent;
+    z-index: -1;
 }
 
 .box-content {
@@ -87,6 +90,28 @@
 }
 
 .box-blue::before {
+    content: "";
+    margin-left: 45%;
+    border-left: 63px solid #0e6cff;
+    border-bottom: 100px solid transparent;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.box:hover .btn {
+    background-color: #0e6cff;
+    color: white;
+}
+
+.box:hover .speechb {
+    background-color: #0e6cff;
+    color: white;
+}
+
+.box:hover .speechb::before {
     content: "";
     margin-left: 45%;
     border-left: 63px solid #0e6cff;
